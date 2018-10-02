@@ -1,3 +1,5 @@
+# Must be first
+ENV['RACK_ENV'] = 'test'
 
 require 'bundler'
 
