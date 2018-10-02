@@ -8,3 +8,15 @@ Bundler.require(:default, :test)
 # which you can see in the Gemfile
 require File.expand_path('../../config/environment.rb', __FILE__)
 # Treat this path as a file
+
+
+DatabaseCleaner.strategy = :truncation
+
+RSpec.configure do |c|
+  c.before(:all) do
+    DatabaseCleaner.clean
+  end
+  c.after(:each) do
+    DatabaseCleaner.clean
+  end
+end
