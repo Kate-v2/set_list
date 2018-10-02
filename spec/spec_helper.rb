@@ -10,6 +10,7 @@ require File.expand_path('../../config/environment.rb', __FILE__)
 # Treat this path as a file
 
 
+# This runs before/after each test ?
 DatabaseCleaner.strategy = :truncation
 
 RSpec.configure do |c|

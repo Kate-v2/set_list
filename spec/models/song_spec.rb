@@ -1,6 +1,23 @@
 
 
 RSpec.describe Song do
+
+  # All validations of data go here
+  describe 'Validations' do
+
+    it 'should not be valid without a title' do
+      song = Song.create(length: 100, play_count: 100)
+      expect(song).to_not be_valid   #this is like minitest assert instance of
+      # -- be_valid is a feature of rspec(?) and means valid instance of our class (Song)
+    end
+
+
+  end
+
+
+
+
+  # All class method tests will go in this section
   describe 'Class methods' do
 
     # Dream coding - Top Down - 'I want to be able to do this thing'
@@ -24,6 +41,9 @@ RSpec.describe Song do
         expect(count).to eq(expected_result)
 
       end
+
+
+
 
     end
 
