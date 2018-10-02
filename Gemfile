@@ -9,4 +9,5 @@ group :development, :test do
   gem 'shotgun'
   gem 'tux'
   gem 'rspec'
+  gem 'database-cleaner'
 end
