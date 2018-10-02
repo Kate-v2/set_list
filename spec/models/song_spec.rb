@@ -11,6 +11,9 @@ RSpec.describe Song do
       # IT --- this is where the test actually happens
       it 'returns the total play count for all songs' do
 
+        # if we don't add a Teardown function, we'll keep adding these
+        # songs to the database and affect our tests if run more than once.
+        # Additionally, these are actually writing to our real database, which is undesirable.
         Song.create(title: "song 1", length: 100, play_count: 100)
         Song.create(title: "song 2", length: 200, play_count: 200)
 
