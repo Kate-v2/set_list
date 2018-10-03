@@ -10,6 +10,11 @@ class Song < ActiveRecord::Base
   validates_presence_of :title, :length, :play_count
 
 
+  # LOOK at playlist.rb in comparison
+  # one Playlist has many songs        -- one:many  -- has_many
+  # one song belongs to one Playlist   -- one:one   -- belongs_to
+  belongs_to :playlist
+
   # --- Can also do this ---
   # This allows you to chain other types of validations
   #   validates :play_count, presence: true
