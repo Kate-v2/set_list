@@ -1,8 +1,18 @@
 
 
 <form class="new-song" action="/songs" method="POST">
-  <input type="text" name="song[title]" placeholder="Title">
+  <!-- <input type="text" name="song[title]" placeholder="Title">
   <input type="text" name="song[length]" placeholder="Length">
-  <input type="text" name="song[play_count]" placeholder="Play Count">
+  <input type="text" name="song[play_count]" placeholder="Play Count"> -->
+  <!--
+    remove the hash syntax to resolve the nested hashes issue and just make the
+    hash that song expects
+    {"song" => {"title" => ".." ...} }
+    is now {"title" => ".." ...}
+    and can be used to make a song
+   -->
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="length" placeholder="Length">
+  <input type="text" name="play_count" placeholder="Play Count">
   <input type="submit" value="Submit">
 </form>

@@ -36,6 +36,10 @@ class SetList < Sinatra::Base
     # post doesn't have a view that goes with it -- you redirect after a post
     # in new.erb -- action="/songs" is like 'path' -- 'what path does this need to go to'
     # if you look at params (via binding.pry) we have a hash {"song" => {"title" => ".." ...} }
+    # to FIX this REMOVE the hash syntax from the new.erb file (go to file for more notes)
+    
+
+
   end
 
 
