@@ -17,4 +17,8 @@ class SetList < Sinatra::Base
     erb :"songs/show"
   end
 
+  get '/songs/new' do
+    erb: :'songs/new'
+  end
+
 end
