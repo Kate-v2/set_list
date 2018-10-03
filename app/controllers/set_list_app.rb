@@ -7,7 +7,7 @@ class SetList < Sinatra::Base
     # @songs = Song.all
     # erb :"songs/index"
     songs = Song.all
-    erb :"songs/index", locals:{songs: songs}
+    erb :"songs/index", :locals => { songs: songs }
   end
 
 
@@ -48,7 +48,6 @@ class SetList < Sinatra::Base
     # and we need to refer to each by name/KEY like below
     song = Song.create(params[:song])
     redirect "/songs/#{song.id}"
-
   end
 
 
