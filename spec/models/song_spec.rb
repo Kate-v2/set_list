@@ -1,4 +1,4 @@
-
+# Run these tests via ______________
 
 RSpec.describe Song do
 
@@ -21,6 +21,14 @@ RSpec.describe Song do
       song = Song.create(title: "song title", length: 100)
       expect(song).to_not be_valid   #this is like minitest assert instance of
       # -- be_valid is a feature of rspec(?) and means valid instance of our class (Song)
+    end
+
+    it 'belongs to one playlists' do
+      # association = Song.reflect_on_association(:playlist) # This is hardcoded (Song),
+      # but at the top RSpec.describe Song do ... we can now refer to that as the described_class
+      # which makes this test dynamic if we change that class in RSpec.describe Song do
+      association = described_class.reflect_on_association(:playlist)
+      expect(association.macro).to eq(:belongs_to)
     end
 
   end
