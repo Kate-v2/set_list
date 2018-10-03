@@ -11,8 +11,18 @@
     is now {"title" => ".." ...}
     and can be used to make a song
    -->
-  <input type="text" name="title" placeholder="Title">
+  <!-- <input type="text" name="title" placeholder="Title">
   <input type="text" name="length" placeholder="Length">
   <input type="text" name="play_count" placeholder="Play Count">
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit"> -->
+
+  <!-- We DO WANT this NESTED HASH syntax
+       because our form might be making more
+      than one object and we want to be able to refer to them each by key
+  -->
+
+  <input type="text" name="song[title]" placeholder="Title">
+  <input type="text" name="song[length]" placeholder="Length">
+  <input type="text" name="song[play_count]" placeholder="Play Count">
+
 </form>
