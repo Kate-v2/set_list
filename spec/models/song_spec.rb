@@ -1,4 +1,4 @@
-# Run these tests via ______________ 
+# Run these tests via ______________
 
 RSpec.describe Song do
 
@@ -24,6 +24,9 @@ RSpec.describe Song do
     end
 
     it 'belongs to one playlists' do
+      # association = Song.reflect_on_association(:playlist) # This is hardcoded (Song),
+      # but at the top RSpec.describe Song do ... we can now refer to that as the described_class
+      # which makes this test dynamic if we change that class in RSpec.describe Song do
       association = described_class.reflect_on_association(:playlist)
       expect(association.macro).to eq(:belongs_to)
     end
