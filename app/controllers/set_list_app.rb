@@ -32,4 +32,9 @@ class SetList < Sinatra::Base
   #   erb: :'songs/new'
   # end
 
+  post '/songs' do
+    # post doesn't have a view that goes with it -- you redirect after a post
+  end
+
+
 end
