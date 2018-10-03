@@ -10,4 +10,5 @@ group :development, :test do
   gem 'tux'
   gem 'rspec'
   gem 'database_cleaner'
+  gem 'pry'
 end
