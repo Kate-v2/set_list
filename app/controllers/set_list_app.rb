@@ -6,7 +6,8 @@ class SetList < Sinatra::Base
   end
 
   get '/songs/:id' do
-    @song = Song.find(1)
+    # @song = Song.find(1)
+    @song = Song.find(params[:id])
     erb :"songs/show"
   end
 
