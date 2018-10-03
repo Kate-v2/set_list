@@ -5,6 +5,6 @@
     <li><%= song.title %></li>
     <li><%= song.length %></li>
     <li><%= song.play_count %></li>
-    <li><%= song.playlist.name %></li>
+    <li><%= song.playlist.name if song.playlist %></li>
   </ul>
 <%end%>
