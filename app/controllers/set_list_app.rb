@@ -40,7 +40,8 @@ class SetList < Sinatra::Base
     # NEVER MIND
     # We do want the nested hash incase we want to create more than one object
     # and we need to refer to each by name/KEY like below
-    Song.create(params[:song])
+    song = Song.create(params[:song])
+    redirect "/songs/#{song.id}"
 
   end
 
