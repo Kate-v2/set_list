@@ -1,9 +1,18 @@
 class SetList < Sinatra::Base
 
+  # get '/songs' do
+  #   @songs = Song.all
+  #   erb :"songs/index"
+  # end
+
+  # Change above to use a local variable
+  # this is better for security
+  # See Show.erb for paired implementation
   get '/songs' do
-    @songs = Song.all
-    erb :"songs/index"
+    songs = Song.all
+    erb :"songs/index", locals:{songs: songs}
   end
+
 
     # PLCEMENT IS IMPORTANT
     # when this came after the next method (get '/songs/:id')
