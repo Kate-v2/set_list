@@ -1,4 +1,4 @@
-# Run these tests via ______________
+# Run these tests via rspec
 
 RSpec.describe Song do
 

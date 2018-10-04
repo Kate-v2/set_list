@@ -1,12 +1,11 @@
 
-
-<% @songs.each do |song| %>
+<% songs.each do |song| %>
   <ul>
     <li><%= song.title %></li>
     <li><%= song.length %></li>
     <li><%= song.play_count %></li>
     <% if song.playlist %>
-    <li><%= song.playlist.name %></li>
+      <li><%= song.playlist.name %></li>
     <% end %>
   </ul>
-<%end%>
+<% end %>
