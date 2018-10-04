@@ -14,6 +14,8 @@ Bundler.require(:default, :test)
 require File.expand_path('../../config/environment.rb', __FILE__)
 # Treat this path as a file
 
+# If simplecov is here - it won't cover your controller
+
 # This needs to be after the environment setup because the app is within the environment
 require 'capybara/dsl'
 Capybara.app = SetList # The name of our app class
