@@ -6,6 +6,7 @@ require 'bundler'
 require 'simplecov'
 # code between these statements won't be tracked by simplecov
 SimpleCov.start
+# terminal: open coverage/index.html
 
 
 Bundler.require(:default, :test)
