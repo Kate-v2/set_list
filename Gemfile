@@ -11,4 +11,7 @@ group :development, :test do
   gem 'rspec'
   gem 'database_cleaner'
   gem 'pry'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'simplecov'
 end
