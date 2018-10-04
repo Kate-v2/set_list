@@ -14,7 +14,7 @@ RSpec.describe "a visitor visits the welcome page" do
 end
 
 
-# Can write a test like a user story
+# -- Can write a test like a user story --
 #   describe 'as a visitor'
 #     describe 'when I visit the welcome page'
 #       it 'should show a welcome message'

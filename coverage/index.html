@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_green.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.2/favicon.png" />
   </head>
   
@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-04T09:49:48-06:00">2018-10-04T09:49:48-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-04T10:17:26-06:00">2018-10-04T10:17:26-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">89.71%</span></span>
+    (<span class="covered_percent"><span class="green">90.67%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.94
+         0.95
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>7</b> files in total.
-    <b>68</b> relevant lines. 
-    <span class="green"><b>61</b> lines covered</span> and
+    <b>8</b> files in total.
+    <b>75</b> relevant lines. 
+    <span class="green"><b>68</b> lines covered</span> and
     <span class="red"><b>7</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -52,12 +52,12 @@
       
       <tr>
         <td class="strong"><a href="#4691857417df7d7f10e33a92f4e6e1211279f13f" class="src_link" title="app/controllers/set_list_app.rb">app/controllers/set_list_app.rb</a></td>
-        <td class="red strong">41.67 %</td>
-        <td>54</td>
-        <td>12</td>
-        <td>5</td>
+        <td class="red strong">50.0 %</td>
+        <td>58</td>
+        <td>14</td>
         <td>7</td>
-        <td>0.4</td>
+        <td>7</td>
+        <td>0.5</td>
       </tr>
       
       <tr>
@@ -101,6 +101,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#6fbc956d024c390ab850425a173d6e48bd4e1ab0" class="src_link" title="spec/features/user_sees_welcome_spec.rb">spec/features/user_sees_welcome_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>20</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#8d4e4e0a330df4168a9db6ed6248c4bb6379c6c4" class="src_link" title="spec/models/playlist_spec.rb">spec/models/playlist_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>13</td>
@@ -139,10 +149,10 @@
         <div class="source_table" id="4691857417df7d7f10e33a92f4e6e1211279f13f">
   <div class="header">
     <h3>app/controllers/set_list_app.rb</h3>
-    <h4><span class="red">41.67 %</span> covered</h4>
+    <h4><span class="red">50.0 %</span> covered</h4>
     <div>
-      <b>12</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>14</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>7</b> lines missed.</span>
     </div>
   </div>
@@ -462,13 +472,37 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  get &#39;/&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    erb :welcome</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
           
           
           <code class="ruby">end</code>
@@ -1016,6 +1050,145 @@
           
           
           <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="6fbc956d024c390ab850425a173d6e48bd4e1ab0">
+  <div class="header">
+    <h3>spec/features/user_sees_welcome_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe &quot;a visitor visits the welcome page&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;should show a welcome message&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit &#39;/&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    within(&#39;#greeting&#39;) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content(&#39;Welcome!&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"># -- Can write a test like a user story --</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">#   describe &#39;as a visitor&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">#     describe &#39;when I visit the welcome page&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">#       it &#39;should show a welcome message&#39;</code>
         </li>
       
     </ol>

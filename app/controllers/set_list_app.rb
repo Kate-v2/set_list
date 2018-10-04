@@ -50,5 +50,9 @@ class SetList < Sinatra::Base
     redirect "/songs/#{song.id}"
   end
 
+  get '/' do
+    erb :welcome
+  end
+
 
 end

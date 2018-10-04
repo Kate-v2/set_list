@@ -78,6 +78,10 @@
         0,
         null,
         null,
+        1,
+        1,
+        null,
+        null,
         null,
         null
       ],
@@ -139,6 +143,28 @@
         null,
         null,
         1,
+        null,
+        null,
+        null
+      ],
+      "/Users/kt/turing/2mod/1week/set-list/spec/features/user_sees_welcome_spec.rb": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null
@@ -233,6 +259,6 @@
         null
       ]
     },
-    "timestamp": 1538668188
+    "timestamp": 1538669846
   }
 }
