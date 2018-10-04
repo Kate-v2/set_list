@@ -3,6 +3,13 @@ ENV['RACK_ENV'] = 'test'
 
 require 'bundler'
 
+require 'simplecov'
+SimpleCov.start
+
+require 'capybara/dsl'
+Capybara.app = SetList # The name of our app class
+Capybara.save_path = 'tmp/capybara' #sets a save path so we don't clutter our repo
+
 Bundler.require(:default, :test)
 # require default gems from Gemfile and then extra gems when you run tests
 # which you can see in the Gemfile
@@ -20,4 +27,5 @@ RSpec.configure do |c|
   c.after(:each) do
     DatabaseCleaner.clean
   end
+  c.include Capybara::DSL
 end
