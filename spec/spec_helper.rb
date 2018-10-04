@@ -4,6 +4,7 @@ ENV['RACK_ENV'] = 'test'
 require 'bundler'
 
 require 'simplecov'
+# code between these statements won't be tracked by simplecov
 SimpleCov.start
 
 

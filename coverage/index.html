@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_red.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_yellow.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.2/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-04T09:47:39-06:00">2018-10-04T09:47:39-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-04T09:49:48-06:00">2018-10-04T09:49:48-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">5.88%</span></span>
+    (<span class="covered_percent"><span class="yellow">89.71%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.03
+         0.94
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>2</b> files in total.
-    <b>34</b> relevant lines. 
-    <span class="green"><b>2</b> lines covered</span> and
-    <span class="red"><b>32</b> lines missed </span>
+    <b>7</b> files in total.
+    <b>68</b> relevant lines. 
+    <span class="green"><b>61</b> lines covered</span> and
+    <span class="red"><b>7</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -51,23 +51,73 @@
     <tbody>
       
       <tr>
+        <td class="strong"><a href="#4691857417df7d7f10e33a92f4e6e1211279f13f" class="src_link" title="app/controllers/set_list_app.rb">app/controllers/set_list_app.rb</a></td>
+        <td class="red strong">41.67 %</td>
+        <td>54</td>
+        <td>12</td>
+        <td>5</td>
+        <td>7</td>
+        <td>0.4</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#da3df543a5c2e5e880b78db4a5fb95bfbbd6aaee" class="src_link" title="app/models/playlist.rb">app/models/playlist.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#08b1fe572a0f2be9f9034e356db6776afa661113" class="src_link" title="app/models/song.rb">app/models/song.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>38</td>
+        <td>7</td>
+        <td>7</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#9ed42177e27e23545a3161d623f0efc9217bff66" class="src_link" title="config/database.rb">config/database.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>8</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#8b90206fd43d459084bb719a64506318dfb75708" class="src_link" title="config/environment.rb">config/environment.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>22</td>
+        <td>11</td>
+        <td>11</td>
+        <td>0</td>
+        <td>1.3</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#8d4e4e0a330df4168a9db6ed6248c4bb6379c6c4" class="src_link" title="spec/models/playlist_spec.rb">spec/models/playlist_spec.rb</a></td>
-        <td class="red strong">20.0 %</td>
+        <td class="green strong">100.0 %</td>
         <td>13</td>
         <td>5</td>
-        <td>1</td>
-        <td>4</td>
-        <td>0.2</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#b852a6803f1658e53ec52cd8e5a44e64f17bbe68" class="src_link" title="spec/models/song_spec.rb">spec/models/song_spec.rb</a></td>
-        <td class="red strong">3.45 %</td>
+        <td class="green strong">100.0 %</td>
         <td>72</td>
         <td>29</td>
-        <td>1</td>
-        <td>28</td>
-        <td>0.0</td>
+        <td>29</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
     </tbody>
@@ -86,14 +136,901 @@
     
       <div class="source_files">
       
+        <div class="source_table" id="4691857417df7d7f10e33a92f4e6e1211279f13f">
+  <div class="header">
+    <h3>app/controllers/set_list_app.rb</h3>
+    <h4><span class="red">41.67 %</span> covered</h4>
+    <div>
+      <b>12</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class SetList &lt; Sinatra::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  # Change above to use a local variable</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # this is better for security</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  # See Show.erb for paired implementation</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  get &#39;/songs&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">    # @songs = Song.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">    # erb :&quot;songs/index&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    songs = Song.all</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">    erb :&quot;songs/index&quot;, :locals =&gt; { songs: songs }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">    # PLCEMENT IS IMPORTANT</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    # when this came after the next method (get &#39;/songs/:id&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    # it thought new was the :id  id=new is not valid for any song</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    # so page breaks</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  get &#39;/songs/new&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
+          
+          <code class="ruby">    erb :&#39;songs/new&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  # parameters come from the url</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  # http://localhost:9393/songs/2?term=apple</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  # params = { &quot;term&quot; =&gt; &quot;apple&quot;, &quot;id&quot; =&gt; &quot;2&quot;}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  # all params come in as strings</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  # a feature of Sinatra is that the type can be converted innately</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  #  --&gt; params[&quot;id&quot;]  =  params[:id]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  # here in the path :id is a &quot;wild card&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  get &#39;/songs/:id&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">    # @song = Song.find(1)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="31">
+          
+          
+          <code class="ruby">    @song = Song.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="32">
+          
+          
+          <code class="ruby">    erb :&quot;songs/show&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">  # PLCEMENT IS IMPORTANT</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">  # --- MOVED ---</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">  # get &#39;/songs/new&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">  #   erb: :&#39;songs/new&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  post &#39;/songs&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">    # post doesn&#39;t have a view that goes with it -- you redirect after a post</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">    # in new.erb -- action=&quot;/songs&quot; is like &#39;path&#39; -- &#39;what path does this need to go to&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">    # if you look at params (via binding.pry) we have a NESTED HASH {&quot;song&quot; =&gt; {&quot;title&quot; =&gt; &quot;..&quot; ...} }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">    # to FIX this REMOVE the hash syntax from the new.erb file (go to file for more notes)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">    # NEVER MIND</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">    # We do want the nested hash incase we want to create more than one object</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">    # and we need to refer to each by name/KEY like below</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="49">
+          
+          
+          <code class="ruby">    song = Song.create(params[:song])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="50">
+          
+          
+          <code class="ruby">    redirect &quot;/songs/#{song.id}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="da3df543a5c2e5e880b78db4a5fb95bfbbd6aaee">
+  <div class="header">
+    <h3>app/models/playlist.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Playlist &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  # one Playlist has many songs        -- one:many  -- has_many</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  # one song belongs to one Playlist   -- one:one   -- belongs_to</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :songs</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="08b1fe572a0f2be9f9034e356db6776afa661113">
+  <div class="header">
+    <h3>app/models/song.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Song &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  # This prevents us from creating a song if there&#39;s no title</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  #   validates :title,      presence: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  #   validates :length,     presence: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  #   validates :play_count, presence: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  # --same:</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates_presence_of :title, :length, :play_count</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  # LOOK at playlist.rb in comparison</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  # one Playlist has many songs        -- one:many  -- has_many</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  # one song belongs to one Playlist   -- one:one   -- belongs_to</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :playlist</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  # --- Can also do this ---</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  # This allows you to chain other types of validations</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  #   validates :play_count, presence: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  # can also do this, but cannot chain</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  #   validates_presence_of :title</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  # When you need to interact with any ?/subset? of instances,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  # must use class methods</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.total_play_count</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">    # ActiveRecord gives us sum in this context</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">    # ActiveRecord is turning this method into the much longer SQL code</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    sum(:play_count)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.average_play_count</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    average(:play_count)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="9ed42177e27e23545a3161d623f0efc9217bff66">
+  <div class="header">
+    <h3>config/database.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># set the database based on the current environment</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">database_name = &quot;set-list-#{SetList.environment}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"># connect ActiveRecord with the current database</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">ActiveRecord::Base.establish_connection(</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  :adapter  =&gt; &quot;sqlite3&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  :database =&gt; &quot;db/#{database_name}&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">)</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="8b90206fd43d459084bb719a64506318dfb75708">
+  <div class="header">
+    <h3>config/environment.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;bundler&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Bundler.require</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"># get the path of the root of the app</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">APP_ROOT = File.expand_path(&quot;..&quot;, __dir__)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"># require the controller(s)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
+          
+          <code class="ruby">Dir.glob(File.join(APP_ROOT, &#39;app&#39;, &#39;controllers&#39;, &#39;*.rb&#39;)).each { |file| require file }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"># require the model(s)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="11">
+          <span class="hits">3</span>
+          
+          <code class="ruby">Dir.glob(File.join(APP_ROOT, &#39;app&#39;, &#39;models&#39;, &#39;*.rb&#39;)).each { |file| require file }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"># require database configurations</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require File.join(APP_ROOT, &#39;config&#39;, &#39;database&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"># configure SetListApp settings</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class SetList &lt; Sinatra::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  set :method_override, true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  set :root, APP_ROOT</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  set :views, File.join(APP_ROOT, &quot;app&quot;, &quot;views&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  set :public_folder, File.join(APP_ROOT, &quot;app&quot;, &quot;public&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="8d4e4e0a330df4168a9db6ed6248c4bb6379c6c4">
   <div class="header">
     <h3>spec/models/playlist_spec.rb</h3>
-    <h4><span class="red">20.0 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>5</b> relevant lines. 
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -124,8 +1061,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="5">
-          
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
           <code class="ruby">  describe &#39;Validations&#39; do</code>
         </li>
@@ -136,20 +1073,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="7">
-          
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should has_many songs&#39; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">        association = Playlist.reflect_on_association(:songs)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(association.macro).to eq(:has_many)</code>
         </li>
@@ -186,11 +1123,11 @@
         <div class="source_table" id="b852a6803f1658e53ec52cd8e5a44e64f17bbe68">
   <div class="header">
     <h3>spec/models/song_spec.rb</h3>
-    <h4><span class="red">3.45 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>29</b> relevant lines. 
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>28</b> lines missed.</span>
+      <span class="green"><b>29</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -227,8 +1164,8 @@
           <code class="ruby">  # All validations of data go here</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="6">
-          
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
           <code class="ruby">  describe &#39;Validations&#39; do</code>
         </li>
@@ -239,20 +1176,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should not be valid without a title&#39; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
           <code class="ruby">      song = Song.create(length: 100, play_count: 100)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="10">
-          
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(song).to_not be_valid   #this is like minitest assert instance of</code>
         </li>
@@ -275,20 +1212,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="14">
-          
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should not be valid without a length&#39; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="15">
-          
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
           
           <code class="ruby">      song = Song.create(title: &quot;song_title&quot;, play_count: 100)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="16">
-          
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(song).to_not be_valid   #this is like minitest assert instance of</code>
         </li>
@@ -311,20 +1248,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="20">
-          
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should not be valid without a play_count&#39; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="21">
-          
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
           <code class="ruby">      song = Song.create(title: &quot;song title&quot;, length: 100)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="22">
-          
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(song).to_not be_valid   #this is like minitest assert instance of</code>
         </li>
@@ -347,8 +1284,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="26">
-          
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
           
           <code class="ruby">    it &#39;belongs to one playlists&#39; do</code>
         </li>
@@ -371,14 +1308,14 @@
           <code class="ruby">      # which makes this test dynamic if we change that class in RSpec.describe Song do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="30">
-          
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
           
           <code class="ruby">      association = described_class.reflect_on_association(:playlist)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="31">
-          
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(association.macro).to eq(:belongs_to)</code>
         </li>
@@ -431,8 +1368,8 @@
           <code class="ruby">  # All class method tests will go in this section</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="40">
-          
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
           
           <code class="ruby">  describe &#39;Class methods&#39; do</code>
         </li>
@@ -461,8 +1398,8 @@
           <code class="ruby">    # This is the name of the test -- should be useful to reader</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="45">
-          
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
           
           <code class="ruby">    describe &#39;.total_play_count&#39; do</code>
         </li>
@@ -479,8 +1416,8 @@
           <code class="ruby">      # IT --- this is where the test actually happens</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="48">
-          
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
           
           <code class="ruby">      it &#39;returns the total play count for all songs&#39; do</code>
         </li>
@@ -503,32 +1440,32 @@
           <code class="ruby">        # Additionally, these are actually writing to our real database, which is undesirable.</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="52">
-          
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
           
           <code class="ruby">        Song.create(title: &quot;song 1&quot;, length: 100, play_count: 100)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="53">
-          
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
           
           <code class="ruby">        Song.create(title: &quot;song 2&quot;, length: 200, play_count: 200)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="54">
-          
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
           
           <code class="ruby">        count    = Song.total_play_count</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="55">
-          
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
           
           <code class="ruby">        expected = 300</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="56">
-          
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(count).to eq(expected)   # Assertion</code>
         </li>
@@ -551,44 +1488,44 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="60">
-          
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
           
           <code class="ruby">    describe &#39;.average_play_count&#39; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="61">
-          
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
           
           <code class="ruby">      it &#39;returns the average play count for all songs&#39; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="62">
-          
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
           
           <code class="ruby">        Song.create(title: &quot;song 1&quot;, length: 100, play_count: 100)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="63">
-          
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
           
           <code class="ruby">        Song.create(title: &quot;song 2&quot;, length: 200, play_count: 200)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="64">
-          
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
           
           <code class="ruby">        average  = Song.average_play_count</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="65">
-          
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
           
           <code class="ruby">        expected = 150</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="66">
-          
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(average).to eq(expected)</code>
         </li>
